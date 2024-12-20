@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
 import 'dart:ui';
+
+import 'package:flutter/material.dart';
+
 import 'login_view.dart';
 import 'registration_view.dart';
 
@@ -20,7 +22,8 @@ class LandingPage extends StatelessWidget {
           ),
           Positioned.fill(
             child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5), // Blur intensity
+              filter:
+                  ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5), // Blur intensity
               child: Container(
                 color: Colors.black.withOpacity(0.01), // Optional dark overlay
               ),
@@ -29,7 +32,7 @@ class LandingPage extends StatelessWidget {
           SafeArea(
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                padding: const EdgeInsets.symmetric(horizontal: 55.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -71,21 +74,23 @@ class LandingPage extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.resolveWith<Color?>((states) {
-                              if (states.contains(MaterialState.hovered)) {
-                                return Colors.grey; // Change to grey on hover
+                            backgroundColor:
+                                WidgetStateProperty.resolveWith<Color?>(
+                                    (states) {
+                              if (states.contains(WidgetState.hovered)) {
+                                return Colors.grey;
                               }
                               return Colors.blue; // Default color
                             }),
-                            shape: MaterialStateProperty.all(
+                            shape: WidgetStateProperty.all(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
                             ),
-                            padding: MaterialStateProperty.all(
+                            padding: WidgetStateProperty.all(
                               const EdgeInsets.symmetric(vertical: 16),
                             ),
-                            elevation: MaterialStateProperty.all(5),
+                            elevation: WidgetStateProperty.all(5),
                           ),
                           child: const Text(
                             "Login",
@@ -112,7 +117,9 @@ class LandingPage extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: WidgetStateProperty.resolveWith<Color?>((states) {
+                            backgroundColor:
+                                WidgetStateProperty.resolveWith<Color?>(
+                                    (states) {
                               if (states.contains(WidgetState.hovered)) {
                                 return Colors.grey; // Change to grey on hover
                               }

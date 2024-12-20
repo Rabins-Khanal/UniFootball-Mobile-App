@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 import 'dart:ui';
 
-import 'package:project/view/dashboard_view.dart';
-
+import 'package:flutter/material.dart';
+import 'package:project/view/dashboard.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -22,7 +21,8 @@ class LoginView extends StatelessWidget {
           // Blur Effect
           Positioned.fill(
             child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5), // Blur intensity
+              filter:
+                  ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5), // Blur intensity
               child: Container(
                 color: Colors.black.withOpacity(0.1), // Optional dark overlay
               ),
@@ -114,7 +114,7 @@ class LoginView extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const DashboardView(),
+                              builder: (context) => const DashboardScreen(),
                             ),
                           );
                         },
