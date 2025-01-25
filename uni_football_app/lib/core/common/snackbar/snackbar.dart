@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+showMySnackBar({
+  required BuildContext context,
+  required String message,
+  Color? color,
+}) {
+  ScaffoldMessenger.of(
+    context,
+  ).showSnackBar(
+    SnackBar(
+      content: Text(message),
+      backgroundColor: color ?? Colors.blue,
+      duration: const Duration(seconds: 2),
+      behavior: SnackBarBehavior.floating,
+    ),
+  );
+}
