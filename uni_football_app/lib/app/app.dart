@@ -4,18 +4,17 @@ import '../core/theme/app_theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'UniFootball',
-      theme: AppTheme.getApplicationTheme(isDarkMode: false),
+      theme: AppTheme.getApplicationTheme(isDarkMode: true),
       // home: BlocProvider.value(
       //   value: getIt<SplashCubit>(),
       //   child: SplashView(),
       //),
     );
-  
   }
 }
