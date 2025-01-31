@@ -29,7 +29,7 @@ class AuthHiveModelAdapter extends TypeAdapter<AuthHiveModel> {
   @override
   void write(BinaryWriter writer, AuthHiveModel obj) {
     writer
-      ..writeByte(9)
+      ..writeByte(6)
       ..writeByte(0)
       ..write(obj.userId)
       ..writeByte(1)
