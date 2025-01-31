@@ -19,6 +19,12 @@ class HomeState extends Equatable {
           child: Text('Dashboard'),
         ),
         const Center(
+          child: Text('News'),
+        ),
+        const Center(
+          child: Text('Standings'),
+        ),
+        const Center(
           child: Text('Account'),
         ),
       ],

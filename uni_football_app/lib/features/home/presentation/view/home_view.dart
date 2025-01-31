@@ -18,12 +18,12 @@ class HomeView extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.logout),
+            icon: const Icon(Icons.skip_previous),
             onPressed: () {
               // Logout code
               showMySnackBar(
                 context: context,
-                message: 'Logging out...',
+                message: 'Signing out',
                 color: Colors.red,
               );
 
@@ -55,11 +55,11 @@ class HomeView extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.book),
-                label: 'Course',
+                label: 'News',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.group),
-                label: 'Batch',
+                label: 'Standings',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.account_circle),

@@ -33,7 +33,7 @@ class _SplashViewState extends State<SplashView> {
                   child: Image.asset('assets/images/splash.png'),
                 ),
                 const Text(
-                  'Student Course Management',
+                  'UniFootball',
                   style: TextStyle(
                     fontSize: 25,
                   ),
