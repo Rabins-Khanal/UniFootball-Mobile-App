@@ -13,19 +13,18 @@ class OnboardingView extends StatelessWidget {
   final PageController _pageController = PageController();
   final List<Map<String, String>> _onboardingData = [
     {
-      "title": "Welcome to Our App",
+      "title": "Welcome to Football",
       "description": "Discover the best features and enhance your experience.",
       "image": "assets/images/onboarding1.png",
     },
     {
-      "title": "Easy Booking",
-      "description": "Book tickets easily and manage your trips hassle-free.",
+      "title": "News about football",
+      "description": "Know about whats happening in world football.",
       "image": "assets/images/onboarding2.png",
     },
     {
       "title": "Stay Updated",
-      "description":
-          "Get real-time updates and notifications about your bookings.",
+      "description": "Get real-time updates and news",
       "image": "assets/images/onboarding3.png",
     },
   ];

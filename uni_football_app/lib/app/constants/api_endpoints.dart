@@ -18,13 +18,10 @@ class ApiEndpoints {
   static const String imageUrl = "http://10.0.2.2:3000/uploads/";
   static const String uploadImage = "auth/uploadImage";
 
-  // ====================== Batch Routes ======================
-  static const String createBatch = "batch/createBatch";
-  static const String getAllBatch = "batch/getAllBatches";
-  static const String deleteBatch = "batch/";
+  // ====================== News Routes ======================
+  // Endpoint for fetching the news overview
+  static String getNewsOverview = 'news/overview';
 
-  // ====================== Course Routes ======================
-  static const String createCourse = "course/createCourse";
-  static const String deleteCourse = "course/";
-  static const String getAllCourse = "course/getAllCourse";
+  // Endpoint for fetching news details by newsId
+  static String getNewsDetails(String newsId) => 'news/details/$newsId';
 }
