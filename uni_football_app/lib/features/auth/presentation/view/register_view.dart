@@ -108,13 +108,14 @@ class _RegisterViewState extends State<RegisterView> {
                       );
                     },
                     child: SizedBox(
-                      height: 200,
-                      width: 200,
+                      height: 150,
+                      width: 150,
                       child: CircleAvatar(
-                        radius: 50,
+                        radius: 40,
+
                         backgroundImage: _img != null
                             ? FileImage(_img!)
-                            : const AssetImage('assets/images/profile.png')
+                            : const AssetImage('assets/images/profile.webp')
                                 as ImageProvider,
                         // backgroundImage:
                         //     const AssetImage('assets/images/profile.png')
@@ -122,6 +123,8 @@ class _RegisterViewState extends State<RegisterView> {
                       ),
                     ),
                   ),
+                  _gap,
+                  _gap,
                   const SizedBox(height: 25),
                   TextFormField(
                     controller: _fullnameController,
@@ -136,6 +139,7 @@ class _RegisterViewState extends State<RegisterView> {
                     }),
                   ),
                   _gap,
+                  _gap,
                   TextFormField(
                     controller: _emailController,
                     decoration: const InputDecoration(
@@ -149,6 +153,7 @@ class _RegisterViewState extends State<RegisterView> {
                     }),
                   ),
                   _gap,
+                  _gap,
                   TextFormField(
                     controller: _usernameController,
                     decoration: const InputDecoration(
@@ -161,6 +166,7 @@ class _RegisterViewState extends State<RegisterView> {
                       return null;
                     }),
                   ),
+                  _gap,
                   _gap,
                   TextFormField(
                     controller: _passwordController,
@@ -176,7 +182,9 @@ class _RegisterViewState extends State<RegisterView> {
                     }),
                   ),
                   _gap,
+                  _gap,
                   SizedBox(
+                    height: 50,
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {

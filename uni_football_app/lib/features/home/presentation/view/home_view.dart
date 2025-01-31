@@ -8,7 +8,7 @@ import '../../../../core/common/snackbar/snackbar.dart';
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
-  final bool _isDarkTheme = false;
+  // final bool _isDarkTheme = false;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class HomeView extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.skip_previous),
+            icon: const Icon(Icons.logout),
             onPressed: () {
               // Logout code
               showMySnackBar(
@@ -30,15 +30,15 @@ class HomeView extends StatelessWidget {
               context.read<HomeCubit>().logout(context);
             },
           ),
-          Switch(
-            value: _isDarkTheme,
-            onChanged: (value) {
-              // Change theme
-              // setState(() {
-              //   _isDarkTheme = value;
-              // });
-            },
-          ),
+          // Switch(
+          //   value: _isDarkTheme,
+          //   onChanged: (value) {
+          //     // Change theme
+          //     // setState(() {
+          //     //   _isDarkTheme = value;
+          //     // });
+          //   },
+          // ),
         ],
       ),
       // body: _views.elementAt(_selectedIndex),
@@ -67,7 +67,7 @@ class HomeView extends StatelessWidget {
               ),
             ],
             currentIndex: state.selectedIndex,
-            selectedItemColor: Colors.white,
+            selectedItemColor: Colors.black,
             onTap: (index) {
               context.read<HomeCubit>().onTabTapped(index);
             },

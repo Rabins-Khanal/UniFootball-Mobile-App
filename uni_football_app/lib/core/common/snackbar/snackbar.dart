@@ -10,7 +10,7 @@ showMySnackBar({
   ).showSnackBar(
     SnackBar(
       content: Text(message),
-      backgroundColor: color ?? Colors.blue,
+      backgroundColor: color ?? Colors.cyan,
       duration: const Duration(seconds: 2),
       behavior: SnackBarBehavior.floating,
     ),
