@@ -16,10 +16,10 @@ void main() {
     registerUseCase = RegisterUseCase(mockAuthRepository);
   });
 
-  const testEmail = 'test@example.com';
-  const testUsername = 'testuser';
-  const testPassword = 'password123';
-  const fullName = 'fullName123';
+  const testEmail = 'rk@gmail.com';
+  const testUsername = 'rabins';
+  const testPassword = 'hello';
+  const fullName = 'rabins';
 
   const registerParams = RegisterUserParams(
     email: testEmail,
