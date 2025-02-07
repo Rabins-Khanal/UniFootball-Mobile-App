@@ -5,6 +5,7 @@ import '../../../domain/entity/news_entity.dart';
 import '../../model/news_api_model.dart';
 import '../news_data_source.dart';
 
+//Api as the source
 class NewsRemoteDataSource implements INewsDataSource {
   final Dio _dio;
 

@@ -18,6 +18,7 @@ class ApiService {
       ..interceptors.add(PrettyDioLogger(
           requestHeader: true, requestBody: true, responseHeader: true))
       ..options.headers = {
+        
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       };
