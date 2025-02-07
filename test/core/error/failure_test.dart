@@ -12,6 +12,7 @@ void main() {
       expect(failure.message, message);
       expect(failure.props, [message]);
     });
+
     test('ApiFailure equality based on message and statusCode', () {
       // Arrange
       const message1 = 'API request failed';
@@ -19,15 +20,17 @@ void main() {
       const message2 = 'Not found';
       const statusCode2 = 404;
 
-      const failure1 = ApiFailure(statusCode1, message: message1);
-      const failure2 = ApiFailure(statusCode1, message: message1);
-      const failure3 = ApiFailure(statusCode2, message: message2);
+      // Correctly pass named parameters
+      const failure1 = ApiFailure(statusCode: statusCode1, message: message1);
+      const failure2 = ApiFailure(statusCode: statusCode1, message: message1);
+      const failure3 = ApiFailure(statusCode: statusCode2, message: message2);
 
       // Act & Assert
       expect(failure1, equals(failure2)); // Same message and statusCode
       expect(
           failure1, isNot(equals(failure3))); // Different message or statusCode
     });
+
     test('LocalDatabaseFailure equality based on message', () {
       // Arrange
       const message1 = 'Database failure';

@@ -14,7 +14,7 @@ void main() {
     loginUseCase = LoginUseCase(mockAuthRepository);
   });
 
-  const testUsername = 'Rabinsoo';
+  const testUsername = 'Rabins';
   const testPassword = 'hello';
   const testToken = 'mocked_token';
 
