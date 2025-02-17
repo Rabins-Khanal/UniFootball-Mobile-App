@@ -53,12 +53,12 @@ class HomeView extends StatelessWidget {
                 label: 'Dashboard',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.book),
-                label: 'Course',
+                icon: Icon(Icons.newspaper),
+                label: 'News',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.group),
-                label: 'Batch',
+                icon: Icon(Icons.bar_chart),
+                label: 'Standings',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.account_circle),

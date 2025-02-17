@@ -62,15 +62,16 @@ class NewsViewState extends State<NewsView> {
                         style: const TextStyle(fontWeight: FontWeight.bold)),
                     subtitle: Text(formattedDate), // Display the formatted date
                     onTap: () {
-                      // Trigger event to fetch details of clicked news
-                      context
-                          .read<NewsBloc>()
-                          .add(FetchNewsDetails(newsItem.newsId));
+                      final newsBloc = context.read<NewsBloc>();
+                      newsBloc.add(FetchNewsDetails(newsItem.newsId));
+
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) =>
-                              NewsDetailView(newsId: newsItem.newsId),
+                          builder: (context) => BlocProvider.value(
+                            value: newsBloc, // Passing the same bloc instance
+                            child: NewsDetailView(newsId: newsItem.newsId),
+                          ),
                         ),
                       );
                     },
