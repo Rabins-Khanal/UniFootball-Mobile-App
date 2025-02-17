@@ -1,6 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:uni_football_app/features/news/data/data_source/news_remote_datasource/news_remote_datasource.dart';
+import 'package:uni_football_app/features/news/data/repository/news_remote_repository.dart';
+import 'package:uni_football_app/features/news/domain/usecase/news_usecases.dart';
+import 'package:uni_football_app/features/news/presentation/view_model/news_bloc.dart';
 
 import '../../core/network/api_service.dart';
 import '../../core/network/hive_service.dart';
@@ -27,6 +31,7 @@ Future<void> initDependencies() async {
   await _initLoginDependencies();
   await _initApiService();
   await _initSplashScreenDependencies();
+  await _initNewsDependencies(); // Added news dependencies initialization
 }
 
 _initApiService() {
@@ -41,8 +46,7 @@ _initHiveService() {
 }
 
 _initRegisterDependencies() {
-// =========================== Data Source ===========================
-
+  // =========================== Data Source ===========================
   getIt.registerLazySingleton<AuthLocalDataSource>(
     () => AuthLocalDataSource(getIt<HiveService>()),
   );
@@ -52,7 +56,6 @@ _initRegisterDependencies() {
   );
 
   // =========================== Repository ===========================
-
   getIt.registerLazySingleton(
     () => AuthLocalRepository(getIt<AuthLocalDataSource>()),
   );
@@ -114,4 +117,32 @@ _initSplashScreenDependencies() async {
   getIt.registerFactory<SplashCubit>(
     () => SplashCubit(getIt<LoginBloc>()),
   );
+}
+
+// =========================== News Dependencies ===========================
+_initNewsDependencies() async {
+  // Register Data Source
+  getIt.registerLazySingleton<NewsRemoteDataSource>(
+    () => NewsRemoteDataSource(getIt<Dio>()),
+  );
+
+  // Register Repository
+  getIt.registerLazySingleton<NewsRemoteRepository>(
+    () => NewsRemoteRepository(getIt<NewsRemoteDataSource>()),
+  );
+
+  // Register UseCases
+  getIt.registerLazySingleton<GetNewsOverviewUseCase>(
+    () => GetNewsOverviewUseCase(getIt<NewsRemoteRepository>()),
+  );
+
+  getIt.registerLazySingleton<GetNewsDetailsUseCase>(
+    () => GetNewsDetailsUseCase(getIt<NewsRemoteRepository>()),
+  );
+
+  // Register Bloc
+  getIt.registerFactory(() => NewsBloc(
+        getNewsOverview: getIt<GetNewsOverviewUseCase>(),
+        getNewsDetails: getIt<GetNewsDetailsUseCase>(),
+      ));
 }

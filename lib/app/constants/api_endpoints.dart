@@ -20,8 +20,8 @@ class ApiEndpoints {
 
   // ====================== News Routes ======================
   // Endpoint for fetching the news overview
-  static String getNewsOverview = 'news/overview';
+  static String getNewsOverview = 'news/';
 
   // Endpoint for fetching news details by newsId
-  static String getNewsDetails(String newsId) => 'news/details/$newsId';
+  static String getNewsDetails(String newsId) => 'news/$newsId';
 }

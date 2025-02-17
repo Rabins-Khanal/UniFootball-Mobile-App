@@ -1,0 +1,1 @@
+ /Users/rabins_khanal/Documents/UniFootball-Mobile-App/.dart_tool/flutter_build/56de3f56f302be55a71003d8a78c7237/native_assets.json: 

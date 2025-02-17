@@ -4,7 +4,6 @@ import 'package:path_provider/path_provider.dart';
 import '../../app/constants/hive_table_constant.dart';
 import '../../features/auth/data/model/auth_hive_model.dart';
 import '../../features/news/data/model/news_hive_model.dart';
-import '../../features/news/data/model/news_hive_model.g.dart';
 
 class HiveService {
   static Future<void> init() async {

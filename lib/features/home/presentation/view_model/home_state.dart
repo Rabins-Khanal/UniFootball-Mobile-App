@@ -1,5 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uni_football_app/app/di/di.dart';
+import 'package:uni_football_app/features/news/presentation/view/news_view.dart';
+import 'package:uni_football_app/features/news/presentation/view_model/news_bloc.dart';
 
 class HomeState extends Equatable {
   final int selectedIndex;
@@ -18,8 +22,9 @@ class HomeState extends Equatable {
         const Center(
           child: Text('Dashboard'),
         ),
-        const Center(
-          child: Text('News'),
+        BlocProvider(
+          create: (context) => getIt<NewsBloc>(),
+          child: NewsView(),
         ),
         const Center(
           child: Text('Standings'),

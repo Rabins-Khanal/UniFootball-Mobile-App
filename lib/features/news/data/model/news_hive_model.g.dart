@@ -1,17 +1,20 @@
-import 'package:hive_flutter/hive_flutter.dart';
+// GENERATED CODE - DO NOT MODIFY BY HAND
 
-import 'news_hive_model.dart'; // Adjust the import based on the file location of your NewsHiveModel
+part of 'news_hive_model.dart';
+
+// **************************************************************************
+// TypeAdapterGenerator
+// **************************************************************************
 
 class NewsHiveModelAdapter extends TypeAdapter<NewsHiveModel> {
   @override
-  final int typeId =
-      1; // Make sure to adjust this typeId to a unique value for NewsHiveModel
+  final int typeId = 1;
 
   @override
   NewsHiveModel read(BinaryReader reader) {
-    final numFields = reader.readByte();
+    final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
-      for (var i = 0; i < numFields; i++) reader.readByte(): reader.read(),
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return NewsHiveModel(
       newsId: fields[0] as String,
@@ -26,7 +29,7 @@ class NewsHiveModelAdapter extends TypeAdapter<NewsHiveModel> {
   @override
   void write(BinaryWriter writer, NewsHiveModel obj) {
     writer
-      ..writeByte(6) // Number of fields in your NewsHiveModel
+      ..writeByte(6)
       ..writeByte(0)
       ..write(obj.newsId)
       ..writeByte(1)

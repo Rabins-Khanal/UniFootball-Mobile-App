@@ -1,0 +1,2 @@
+/Users/rabins_khanal/Documents/UniFootball-Mobile-App/android/app/.cxx/Debug/4f594r18/x86/CMakeFiles/edit_cache.dir
+/Users/rabins_khanal/Documents/UniFootball-Mobile-App/android/app/.cxx/Debug/4f594r18/x86/CMakeFiles/rebuild_cache.dir

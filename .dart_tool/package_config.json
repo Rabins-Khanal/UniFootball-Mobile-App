@@ -416,6 +416,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "io",
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/io-1.0.5",
       "packageUri": "lib/",
@@ -902,7 +908,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-02-17T03:09:29.586943Z",
+  "generated": "2025-02-17T09:06:54.491229Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/rabins_khanal/Documents/developer/flutter",

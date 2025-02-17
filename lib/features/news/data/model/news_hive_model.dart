@@ -3,6 +3,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../domain/entity/news_entity.dart';
 
+part 'news_hive_model.g.dart';
+
 @HiveType(typeId: 1) // Use appropriate ID
 class NewsHiveModel extends Equatable {
   @HiveField(0)

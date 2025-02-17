@@ -1,17 +1,16 @@
 import 'package:dartz/dartz.dart';
+import 'package:uni_football_app/core/error/failure.dart';
+import 'package:uni_football_app/features/news/domain/entity/news_entity.dart';
+import 'package:uni_football_app/features/news/domain/repository/news_repository.dart';
 
-import '../../../../core/error/failure.dart';
-import '../../domain/entity/news_entity.dart';
-import '../repository/news_repository.dart';
-
-// Use case for fetching news overview
 class GetNewsOverviewUseCase {
   final INewsRepository repository;
 
   GetNewsOverviewUseCase(this.repository);
 
-  Future<Either<Failure, List<NewsEntity>>> call() {
-    return repository.getNewsOverview();
+  Future<Either<Failure, List<NewsEntity>>> call() async {
+    final result = await repository.getNewsOverview();
+    return result;
   }
 }
 
