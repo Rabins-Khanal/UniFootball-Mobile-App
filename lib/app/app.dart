@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Unifootball App',
       theme: AppTheme.getApplicationTheme(isDarkMode: false),
       home: BlocProvider(
-        create: (context) => getIt<NewsBloc>(), // Provide NewsBloc here
+        create: (context) => getIt<NewsBloc>(), // This is where NewsBloc is provided
         child: BlocProvider.value(
           value: getIt<SplashCubit>(),
           child: SplashView(),

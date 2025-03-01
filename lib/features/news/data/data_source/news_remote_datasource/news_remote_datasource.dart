@@ -19,7 +19,6 @@ class NewsRemoteDataSource implements INewsDataSource {
       if (response.statusCode == 200) {
         // Ensure response structure is correct
         final jsonData = response.data;
-
         if (jsonData != null &&
             jsonData["success"] == true &&
             jsonData.containsKey("data")) {

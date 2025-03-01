@@ -11,12 +11,7 @@ class SplashView extends StatefulWidget {
   State<SplashView> createState() => _SplashViewState();
 }
 
-class _SplashViewState extends State<SplashView> {
-  @override
-  void initState() {
-    super.initState();
-    context.read<SplashCubit>().init(context);
-  }
+
 
   @override
   Widget build(BuildContext context) {

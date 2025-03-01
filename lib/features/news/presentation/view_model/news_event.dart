@@ -12,6 +12,7 @@ class FetchNewsOverview extends NewsEvent {}
 class FetchNewsDetails extends NewsEvent {
   final String newsId;
   const FetchNewsDetails(this.newsId);
+
   @override
   List<Object> get props => [newsId];
 }
