@@ -1,6 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:uni_football_app/features/auth/presentation/view_model/login/login_state.dart';
 
 import '../../../../../core/common/snackbar/snackbar.dart';
 import '../../../../home/presentation/view/home_view.dart';
@@ -9,7 +10,6 @@ import '../../../domain/usecase/login_usecase.dart';
 import '../register/register_bloc.dart';
 
 part 'login_event.dart';
-part 'login_state.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   final RegisterBloc _registerBloc;
