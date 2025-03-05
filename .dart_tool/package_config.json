@@ -284,6 +284,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_driver",
+      "rootUri": "file:///Users/rabins_khanal/Documents/developer/flutter/packages/flutter_driver",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0",
       "packageUri": "lib/",
@@ -312,6 +318,12 @@
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "fuchsia_remote_debug_protocol",
+      "rootUri": "file:///Users/rabins_khanal/Documents/developer/flutter/packages/fuchsia_remote_debug_protocol",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
     },
     {
       "name": "get_it",
@@ -414,6 +426,12 @@
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "integration_test",
+      "rootUri": "file:///Users/rabins_khanal/Documents/developer/flutter/packages/integration_test",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
     },
     {
       "name": "intl",
@@ -650,6 +668,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "process",
+      "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/process-5.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/provider-6.1.2",
       "packageUri": "lib/",
@@ -800,6 +824,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "sync_http",
+      "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/sync_http-0.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "term_glyph",
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/term_glyph-1.2.2",
       "packageUri": "lib/",
@@ -878,6 +908,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "webdriver",
+      "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/webdriver-3.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
       "name": "webkit_inspection_protocol",
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
       "packageUri": "lib/",
@@ -908,7 +944,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-03-04T13:04:09.260028Z",
+  "generated": "2025-03-05T22:30:24.747391Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/rabins_khanal/Documents/developer/flutter",

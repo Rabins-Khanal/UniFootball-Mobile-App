@@ -5,6 +5,7 @@ import 'package:uni_football_app/features/news/data/data_source/news_remote_data
 import 'package:uni_football_app/features/news/data/repository/news_remote_repository.dart';
 import 'package:uni_football_app/features/news/domain/usecase/news_usecases.dart';
 import 'package:uni_football_app/features/news/presentation/view_model/news_bloc.dart';
+import 'package:uni_football_app/features/splash/presentation%20/view_model/splash_cubit.dart';
 
 import '../../core/network/api_service.dart';
 import '../../core/network/hive_service.dart';
@@ -18,7 +19,6 @@ import '../../features/auth/domain/usecase/upload_image_usecase.dart';
 import '../../features/auth/presentation/view_model/login/login_bloc.dart';
 import '../../features/auth/presentation/view_model/register/register_bloc.dart';
 import '../../features/home/presentation/view_model/home_cubit.dart';
-import '../../features/splash/presentation/view_model/splash_cubit.dart';
 import '../shared_preferences/token_shared_preferences.dart';
 
 final getIt = GetIt.instance;
