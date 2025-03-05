@@ -31,18 +31,16 @@ class HomeView extends StatelessWidget {
           ),
           Switch(
             value: _isDarkTheme,
-            onChanged: (value) {
-             
-            },
+            onChanged: (value) {},
           ),
         ],
       ),
       // body: _views.elementAt(_selectedIndex),
-      body: BlocBuilder<HomeCubi
+      body: BlocBuilder<HomeCubit, HomeState>(builder: (context, state) {
         return state.views.elementAt(state.selectedIndex);
       }),
       bottomNavigationBar: BlocBuilder<HomeCubit, HomeState>(
-        builder = (context, state) {
+        builder: (context, state) {
           return BottomNavigationBar(
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
