@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/3491abe2-5943-466e-a35b-a57f55dab3eb)
 # uni_football_app
 
 A football based mobile application that delivers real-time news and match updates, provides users with personalized content based on their favorite teams and leagues, and has a smooth, engaging, and playful UI/UX design.UniFootball is the new asset in the market that has an immense potential to elevate the mobile experience for football fans
