@@ -692,6 +692,18 @@
       "languageVersion": "3.6"
     },
     {
+      "name": "sensors_plus",
+      "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/sensors_plus-6.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "sensors_plus_platform_interface",
+      "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/sensors_plus_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///Users/rabins_khanal/.pub-cache/hosted/pub.dev/shared_preferences-2.5.2",
       "packageUri": "lib/",
@@ -944,7 +956,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-03-05T22:30:24.747391Z",
+  "generated": "2025-03-06T03:11:54.173061Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///Users/rabins_khanal/Documents/developer/flutter",
