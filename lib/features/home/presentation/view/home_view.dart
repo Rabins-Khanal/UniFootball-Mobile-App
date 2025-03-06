@@ -16,25 +16,7 @@ class HomeView extends StatefulWidget {
   State<HomeView> createState() => _HomeViewState();
 }
 
-class _HomeViewState extends State<HomeView> {
-  // Shake Detection
-  StreamSubscription? _accelerometerSubscription;
-  static const double shakeThreshold = 20.0; // ✅ Adjusted shake sensitivity
-  bool _canLogout = true; // ✅ Prevent multiple logouts from a single shake
 
-  // Inactivity Detection (Gyroscope)
-  StreamSubscription? _gyroscopeSubscription;
-  Timer? _inactivityTimer;
-  bool _showMessage = false; // ✅ Controls visibility of the message
-  static const int inactivityDuration =
-      10; // ✅ Show message after 5 sec of inactivity
-
-  @override
-  void initState() {
-    super.initState();
-    _startShakeDetection();
-    _startGyroscopeDetection(); // ✅ Detects inactivity
-  }
 
   @override
   void dispose() {
