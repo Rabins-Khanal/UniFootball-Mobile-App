@@ -1,16 +1,5 @@
 # uni_football_app
 
-A new Flutter project.
+A football based mobile application that delivers real-time news and match updates, provides users with personalized content based on their favorite teams and leagues, and has a smooth, engaging, and playful UI/UX design.UniFootball is the new asset in the market that has an immense potential to elevate the mobile experience for football fans
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1741243444](https://github.com/user-attachments/assets/5331b101-152f-44e3-8d20-d9b5f92055ef)
