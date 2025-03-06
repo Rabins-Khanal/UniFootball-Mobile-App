@@ -1,4 +1,0 @@
-Not searching for unused variables given on the command line.
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/rabins_khanal/Documents/UniFootball-Mobile-App/android/app/.cxx/Debug/4f594r18/x86
