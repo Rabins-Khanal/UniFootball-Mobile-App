@@ -71,6 +71,21 @@ class _HomeViewState extends State<HomeView> {
     context.read<HomeCubit>().logout(context);
   }
 
+  // ✅ Gyroscope Detection for Inactivity
+  void _startGyroscopeDetection() {
+    _gyroscopeSubscription = gyroscopeEvents.listen((event) {
+      double movement =
+          sqrt(event.x * event.x + event.y * event.y + event.z * event.z);
+
+      if (movement > 0.5) {
+        // ✅ Small movement detected
+        _resetInactivityTimer();
+      }
+    });
+
+    _resetInactivityTimer(); // ✅ Start tracking inactivity
+  }
+
   void _resetInactivityTimer() {
     _inactivityTimer?.cancel(); // ✅ Cancel any existing timer
 
