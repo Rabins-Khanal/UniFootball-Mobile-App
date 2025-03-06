@@ -15,7 +15,7 @@ class TokenSharedPrefs {
     } catch (e) {
       return Left(SharedPrefsFailure(message: e.toString()));
     }
-  }
+  } //to store the token
 
   Future<Either<Failure, String>> getToken() async {
     try {
